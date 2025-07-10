@@ -12,10 +12,6 @@ genai.configure(api_key=api)
 if "qa_history" not in st.session_state:
     st.session_state.qa_history = []
 
-# Load and resize logo
-logo = Image.open("logo.png")
-resized_logo = logo.resize((200, 150))  # Adjust width and height as needed
-
 # tabs
 tab1, tab2 = st.tabs(["ChatBot", "History"])
 
@@ -50,8 +46,6 @@ else:
             
         # Sidebar 
         with col1:
-            st.sidebar.image(resized_logo)
-            st.sidebar.markdown("---")
             st.sidebar.subheader("👤 Your Profile :")
                 
             with c1:
