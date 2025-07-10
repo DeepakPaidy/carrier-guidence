@@ -1,0 +1,6 @@
+streamlit
+streamlit_tags
+streamlit-authenticator
+extra-streamlit-components
+google-generativeai
+python-dotenv
